@@ -1,3 +1,4 @@
+[![show-directory](https://github.com/killdom2/hexlet-ci-app/actions/workflows/myFirstFork.yml/badge.svg)](https://github.com/killdom2/hexlet-ci-app/actions/workflows/myFirstFork.yml)
 # Example app for CI Hexlet course
 
 Starting boilerplate of [Strapi](https://strapi.io/) application
