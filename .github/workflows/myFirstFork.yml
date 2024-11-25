@@ -8,14 +8,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # экшен — выполняет какую-то задачу
-      # checkout — клонирует репозиторий
-      - uses: actions/checkout@v4
+      - name: Checkout
+        id: checkout
+        uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '18.x'
           cache: 'npm'
-      - uses: hexlet-components/hello-from-hexlet-action@release
+      - name: Print Hello from Hexlet
+        uses: hexlet-components/hello-from-hexlet-action@release
       - run: make setup
       - run: make test
       - run: make lint
